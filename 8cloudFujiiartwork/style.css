@@ -1,0 +1,102 @@
+/* Global Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Body & Font */
+body {
+  font-family: 'Inter', sans-serif;
+  color: #fff;
+  min-height: 100vh;
+  position: relative;
+  background: #000;
+  line-height: 1.8;
+}
+
+/* Fullscreen Background */
+.background {
+  position: fixed;
+  inset: 0;
+  background: url('images/background.jpg') center/cover no-repeat;
+  filter: brightness(0.55);
+  z-index: -1;
+}
+
+/* Main Content */
+.content {
+  max-width: 760px;
+  margin: 8vh auto;
+  padding: 4rem 3rem 8rem; /* bottom space for audio */
+  background: rgba(0, 0, 0, 0.4);
+  border-radius: 12px;
+}
+
+/* Hero Section */
+.hero {
+  text-align: center;
+  margin-bottom: 4rem;
+}
+
+.hero h1 {
+  font-size: 2.6rem;
+  font-weight: 300;
+  margin-bottom: 0.5rem;
+}
+
+.subtitle {
+  font-size: 1rem;
+  opacity: 0.7;
+}
+
+/* Work Intro */
+.work-intro {
+  text-align: center;
+  margin-bottom: 3rem;
+}
+
+.work-intro h2 {
+  font-family: 'Playfair Display', serif;
+  font-size: 2rem;
+  margin-bottom: 0.3rem;
+}
+
+.meta {
+  font-size: 0.9rem;
+  opacity: 0.6;
+}
+
+/* Monologue */
+.monologue {
+  font-family: 'Playfair Display', serif;
+}
+
+.monologue p {
+  font-size: 1.1rem;
+  margin-bottom: 1.9rem;
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  padding: 1.5rem 1rem;
+  font-size: 0.85rem;
+  background: rgba(0, 0, 0, 0.6);
+  margin-top: 4rem;
+}
+
+/* Responsive */
+@media (max-width: 600px) {
+  .content {
+    padding: 2.5rem 1.8rem 6rem; /* bottom space for audio */
+  }
+
+  .hero h1 {
+    font-size: 2rem;
+  }
+
+  audio {
+    width: 90%;
+  }
+}
